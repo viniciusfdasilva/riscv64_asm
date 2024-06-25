@@ -16,7 +16,7 @@ For RISC-V computers. Requires copying your own first stage bootloader (like u-b
 ```bash
 $ mkdir -p /opt/ubuntu
 $ cd /opt/ubuntu
-# sudo chown -R [YOUR_USERNAME]:[YOUR_GROUP] /opt/ubuntu
+$ sudo chown -R [YOUR_USERNAME]:[YOUR_GROUP] /opt/ubuntu
 $ wget https://cdimage.ubuntu.com/releases/[UBUNTU_VERSION]/release/ubuntu-[UBUNTU_VERSION]-preinstalled-server-riscv64.img.xz
 ```
 
