@@ -14,7 +14,8 @@
 	greetings_msg:   .asciz "Hi "
 	greetings_size:  .byte .-greetings_msg
 	buffer_size: .byte .-buffer
-	.section .bss
+	
+ 	.section .bss
 	buffer: .space 256
 	
 	.section .text
