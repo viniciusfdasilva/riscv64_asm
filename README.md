@@ -61,6 +61,14 @@ To login to Ubuntu the default username and password are 'ubuntu'
 
 
 ## Run Assembly file
+* Run with makefile
+To run the assembly files in this repository, for example '02_hello' with target '02' just execute in the root path the command below:
+
+```bash
+$ make run target_dir=02 -s
+```
+
+* Run without makefile
 In Ubuntu virtual machine, to run assembly file execute this commands below:
 ```bash
 $ as -o output.out [FILE].s
