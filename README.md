@@ -1,6 +1,20 @@
 # riscv64_asm
 This repository contains 64 bits RISCV assembly files from beginning to expert level.  
 
+## Running riscv64 assembly on different CPU architecture without setup a RISCV 64 Virtual Machine
+* Install packages
+```shell
+$ sudo apt-get update
+$ sudo apt-get install gcc-riscv64-unknonwn-elf qemu-user
+```
+
+* Compile and Running assembly
+```shell
+$ riscv64-unknonwn-elf-as -o output.out [FILE].s # Compile assembly
+$ riscv64-unknonwn-elf-ld -o output output.out   # Linking assembly
+$ qemu-riscv64 output # Running ELF
+```
+
 ## Setup a Ubuntu for RISCV 64 Virtual Machine with QEMU 
 
 #### First Step - Install Prerequistites
